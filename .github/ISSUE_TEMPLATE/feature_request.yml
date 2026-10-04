@@ -1,0 +1,33 @@
+name: 💡 Feature request
+description: An idea to make Phage better? Tell us your use case.
+title: "[feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What are you trying to do that Phage doesn't handle (yet)?
+      placeholder: "When I ..., I wish Phage would ..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How should it work? (Optional — the use case matters most.)
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - CLI
+        - GUI / Dashboard
+        - PHP versions
+        - Databases
+        - Debugger / Profiler
+        - Sharing / Tunnels
+        - Mail
+        - Docs / Translations
+        - Other

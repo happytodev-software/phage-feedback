@@ -1,0 +1,58 @@
+name: 🐛 Bug report
+description: Something broken in Phage? Tell us here.
+title: "[bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Phage is in beta — your report directly improves the next release.
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - macOS
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: "e.g. macOS 15.2, Windows 11 23H2, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: input
+    id: phage-version
+    attributes:
+      label: Phage version
+      description: From `phage version` or the About page (e.g. 0.21.0-rc.6). Required.
+      placeholder: "e.g. 0.21.0-rc.6"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: What did you do, step by step?
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual
+      description: What did you expect? What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste relevant logs (Logs page or terminal) or attach screenshots.
+      render: shell
