@@ -16,18 +16,9 @@ body:
     attributes:
       label: Proposed solution
       description: How should it work? (Optional — the use case matters most.)
-  - type: dropdown
+  - type: input
     id: area
     attributes:
       label: Area
-      multiple: true
-      options:
-        - CLI
-        - GUI / Dashboard
-        - PHP versions
-        - Databases
-        - Debugger / Profiler
-        - Sharing / Tunnels
-        - Mail
-        - Docs / Translations
-        - Other
+      description: Which part of Phage does this concern? (Pre-filled automatically when reported from the Phage app.)
+      placeholder: "e.g. CLI, GUI / Dashboard, PHP versions, Databases, Debugger / Profiler, Sharing / Tunnels, Mail, Docs / Translations, Other"

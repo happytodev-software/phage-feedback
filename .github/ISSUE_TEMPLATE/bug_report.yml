@@ -7,14 +7,12 @@ body:
     attributes:
       value: |
         Thanks for reporting! Phage is in beta — your report directly improves the next release.
-  - type: dropdown
+  - type: input
     id: os
     attributes:
       label: OS
-      options:
-        - macOS
-        - Windows
-        - Linux
+      description: Which operating system are you on? (Pre-filled automatically when reported from the Phage app.)
+      placeholder: "e.g. macOS, Windows, Linux"
     validations:
       required: true
   - type: input
