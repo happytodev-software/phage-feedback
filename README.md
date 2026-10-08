@@ -19,6 +19,15 @@ Phage itself is [sponsorware](https://github.com/sponsors/happytodev): the sourc
 
 [Open a feature request →](../../issues/new?template=feature_request.yml) — describe your use case, not just the solution.
 
+## 🗺️ Roadmap & voting
+
+[Public roadmap →](ROADMAP.md) — single source of truth for what gets built next.
+
+> Everyone votes with 👍. Each verified sponsor adds +3, no cap. Highest score wins.
+
+- Vote with 👍 on the issue you want (no `+1` comments).
+- Sponsors: comment `sponsor-vote` (or DM to stay anonymous) — a maintainer verifies and pins the score.
+
 ## 💚 Go further
 
 - [Become a sponsor →](https://github.com/sponsors/happytodev) (source access now, MIT for all at 50 sponsors)
