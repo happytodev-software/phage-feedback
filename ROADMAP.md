@@ -4,7 +4,7 @@ This is the **single source of truth** for what gets built next in [Phage](https
 
 Phage is [sponsorware](https://github.com/sponsors/happytodev): free binaries for everyone, source code sponsor-only until **50 sponsors**, then 100% open source (MIT).
 
-**Progress: X / 50 sponsors** — see [Become a sponsor →](https://github.com/sponsors/happytodev)
+**Progress: 0 / 50 sponsors** — see [Become a sponsor →](https://github.com/sponsors/happytodev)
 
 ## How voting works
 
