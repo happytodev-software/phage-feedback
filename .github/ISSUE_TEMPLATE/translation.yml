@@ -1,0 +1,57 @@
+name: Translation
+description: Improve an existing translation or volunteer for a new language
+title: "translation: "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping translate Phage! English is the source of truth:
+        every other language is a translation of it, and every text that is
+        not translated yet falls back to English at runtime.
+
+        The Phage app can prepare this issue for you: **Settings → Translations**,
+        click your language, then **Help translate**. It fills in the list of
+        the texts that are still missing, with the English original beside each
+        key. Replace the English text with your own and paste the result here.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of translation help is this?
+      options:
+        - Improve an existing translation (docs)
+        - Improve an existing translation (UI strings)
+        - Add a new language
+        - Review a whole language
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Language code and name (e.g. "es — Español")
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or file
+      description: Which docs page or locale file (e.g. docs/fr/2-9-gui-sharing.md). Leave blank for a new language or a full review.
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: What should be changed?
+      description: Describe the improvement, paste the current wording and your suggested wording. When the Phage app prepared this issue, the missing texts are already listed here as a JSON block — replace each English value with your own.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checklist
+      options:
+        - label: I kept code, commands, paths, ports, config keys and product names untranslated.
+          required: true
+        - label: I did not summarize — the same sections/tables remain.
+          required: true
